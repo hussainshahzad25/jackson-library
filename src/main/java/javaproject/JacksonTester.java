@@ -15,11 +15,11 @@ public class JacksonTester {
 		try {
 			Student student = new Student();
 			student.setAge(10);
-			student.setName("Mahesh");
+			student.setName("Shahzad");
 			tester.writeJSON(student);
 
 			Student student1 = tester.readJSON();
-			System.out.println("student1:: "+student1);
+			System.out.println("student1:: " + student1);
 		} catch (JsonParseException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
